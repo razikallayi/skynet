@@ -1,7 +1,8 @@
 // Styling for the masthead
 header.masthead {
   padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
+  // padding-bottom: calc(10rem - 56px);
+  padding-bottom:0px;
   background: #EEE;
   background-position: center center;
   @include background-cover;
