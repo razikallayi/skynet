@@ -12,7 +12,7 @@
       if (target.length) {
         $('html, body').animate({
           scrollTop: (target.offset().top - 57)
-        }, 1000, "easeInOutExpo");
+        }, 1000, "easeOutCubic");
         return false;
       }
     }
@@ -26,7 +26,7 @@
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
-    offset: 57
+    offset: 67
   });
 
   // Collapse Navbar
