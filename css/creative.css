@@ -509,6 +509,23 @@ header.masthead p {
   /*margin: auto;*/
 }
 
+.owl-carousel .owl-item img.bnr-img:hover {
+  animation: swing 2s;
+}
+
+.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item {
+  -ms-touch-action: auto;
+  touch-action: auto;
+}
+
+.service-box {
+  transition: all 0.3s ease-in-out;
+}
+
+.service-box:hover {
+  transform: scale(0.9);
+}
+
 #footer {
   width: 100%;
   clear: both;

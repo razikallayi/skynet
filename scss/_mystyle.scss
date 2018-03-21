@@ -47,6 +47,33 @@ background: linear-gradient(to right, rgba(255,255, 200, 0.6), rgba(178, 10, 44,
   /*margin: auto;*/
 }
 
+.owl-carousel .owl-item img.bnr-img:hover{
+  animation: swing 2s ;
+}
+
+.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item{
+    -ms-touch-action: auto;
+        touch-action: auto;
+}
+
+
+.service-box{
+  transition: all 0.3s ease-in-out;
+}
+.service-box:hover{
+  // animation: bounce 2s;
+  transform: scale(.9);
+}
+
+
+
+
+
+
+
+
+
+
 
 #footer{width:100%;clear:both;background:#fff;text-align:center;color:#1f2228;z-index:10;position:relative;padding-top:140px}
 #footer .footer-main{height:100%;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
