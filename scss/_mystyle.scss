@@ -59,6 +59,7 @@ background: linear-gradient(to right, rgba(255,255, 200, 0.6), rgba(178, 10, 44,
 
 .service-box{
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 .service-box:hover{
   // animation: bounce 2s;
@@ -66,11 +67,19 @@ background: linear-gradient(to right, rgba(255,255, 200, 0.6), rgba(178, 10, 44,
 }
 
 
+section#contact .form-group{margin-bottom:25px}section#contact .form-group input,section#contact .form-group textarea{padding:20px}section#contact .form-group input.form-control{height:auto}section#contact .form-group textarea.form-control{height:248px}section#contact .form-control:focus{border-color:#fed136;box-shadow:none}section#contact ::-webkit-input-placeholder{font-weight:700;color:#ced4da;font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif}section#contact :-moz-placeholder{font-weight:700;color:#ced4da;font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif}section#contact ::-moz-placeholder{font-weight:700;color:#ced4da;font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif}section#contact :-ms-input-placeholder{font-weight:700;color:#ced4da;font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif}footer{padding:25px 0;text-align:center}footer span.copyright{font-size:90%;line-height:40px;text-transform:none;font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif}
 
 
 
 
 
+section#about::after{
+  content:' ';
+  width:100px;
+  height:200px;
+  background:red;
+// background:url(../img/abt.svg) no-repeat #fff;
+}
 
 
 
@@ -81,8 +90,8 @@ background: linear-gradient(to right, rgba(255,255, 200, 0.6), rgba(178, 10, 44,
 #footer_message{background:url(../img/footer_border.png) repeat-x;padding:35px 0 0;text-align:center}
 #footer .container{height:auto}
 #footer_message .container{padding:0}
-#footer_message a.bg_item{background:url(../img/qatar-draw.svg) no-repeat #fff;background-size:139px 80px;width:139px;height:80px;display:block;position:absolute;left:50%;top:73px;margin-left:-70px}
-#footer_message a.bg_item:hover{-webkit-transform:scale(1.2);-ms-transform:scale(1.2);transform:scale(1.2)}
+#footer_message a.bg_item{transition: all 0.5s ease-in-out;z-index:1; background:url(../img/qatar-draw.svg) no-repeat #fff;background-size:139px 80px;width:139px;height:80px;display:block;position:absolute;left:50%;top:73px;margin-left:-70px}
+#footer_message a.bg_item:hover{-webkit-transform:scale(1.4);-ms-transform:scale(1.4);transform:scale(1.4)}
 #footer_message p.message{font-size:14px;margin:0}
 #footer_message p.message span{text-transform:uppercase;font-weight:bold}
 #footer{padding-top:120px}
@@ -98,7 +107,6 @@ background: linear-gradient(to right, rgba(255,255, 200, 0.6), rgba(178, 10, 44,
 .footer_top .subscribe_form .es_lablebox{display:none}
 .footer_top .subscribe_form input.subscribe,.footer_top .subscribe_form .es_textbox_button{background:#232323;color:#fff;font-size:14px;margin-left:-4px;text-transform:uppercase;padding:0;-webkit-border-radius:0 3px 3px 0;border-radius:0 3px 3px 0;border:0;width:117px;height:44px;cursor:pointer;-webkit-appearance:none}
 .footer_top .subscribe_form .es_textbox_button:hover,.footer_top .subscribe_form .es_textbox_button:focus{background-color:#444}
-.footer_bottom{padding:0 0 40px;float:left;text-align:left}
 .footer_bottom p{font-size:16px}
 .footer_bottom ul{list-style:none;padding:0 0 0px}
 .footer_bottom ul li{display:inline-block;margin-right:40px}
@@ -110,9 +118,6 @@ background: linear-gradient(to right, rgba(255,255, 200, 0.6), rgba(178, 10, 44,
 .footer_bottom ul li.tw a:hover i,.footer_bottom ul li.tw a:focus i{color:#25c8ff}
 .footer_bottom ul li.db a:hover i,.footer_bottom ul li.db a:focus i{color:#f26798}
 .footer_bottom ul li.li a:hover i,.footer_bottom ul li.li a:focus i{color:#0274b3}
-.footer_bottom ul li.be a:hover i,.footer_bottom ul li.be a:focus i{color:#1869ff}
-.footer_bottom ul li.be a{position:relative;top:1px}
-.footer_bottom ul li.be a i{font-size:21px}
 .footer_bottom ul li.li a{position:relative;top:-1px}
 .footer_top .subscribe_form .es_textbox_class,.footer_top .subscribe_form input.TextInput{max-width:200px;width:100%}
 .grid-col-2,.we-do-item,.work-grid{width:100%;float:none}

@@ -74,7 +74,7 @@
 
 
     <!-- Navigation -->
-    <nav class="navbar navbar-light fixed-top" id="mainNav">
+    <nav class="navbar  navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container" itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
         <a class="navbar-brand js-scroll-trigger" href="#page-top"><img height="50px"  itemprop="url" src="img/logo.png"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,6 +93,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -142,7 +145,7 @@
       </div> 
     </header>
 
-    <section class="" id="about">
+    <section class="bg-white pb-0" id="about">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-4 mx-auto text-center">
@@ -156,6 +159,8 @@
           </div>
         </div>
       </div>
+      <div class="mt-3" data-aos="zoom-in" style="width:100%; height:200px;background: url('img/abt.svg');"">
+    </div>
     </section>
 
 
@@ -163,7 +168,7 @@
 
 
     <!-- Image Showcases -->
-    <section id="products" class="bg-light showcase p-0 pt-5">
+    <section id="products" class="bg-light showcase pb-0">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -178,16 +183,16 @@
           <div class="col-lg-6 order-lg-2 text-white showcase-img" data-aos="flip-left" style="background-image: url('img/bg-showcase-1.jpg');"></div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
             <h2 class="goRight" data-aos="fade-right">The complete Accounting & inventory package (atACC)</h2>
-            <p class="lead mb-0" data-aos="fade-right">atACC is a complete Accounting and Inventory package developed to manage the accounts and inventory of all sorts of business enterprises, small scale as well as large scale.</p>
-            <button class="btn btn-sm btn-danger pull-right">Read more</button>
+            <p class="small mb-0" data-aos="fade-right">atACC is a complete Accounting and Inventory package developed to manage the accounts and inventory of all sorts of business enterprises, small scale as well as large scale.Your ignorance of accounting concepts is not at all a constraint to use atACC, as the package does not demand any accounting knowledge. All you need is just an awareness of your business. The software is so simple to use that anybody can start using it with minimum experience. At present around 2,500 clients are using these software packages in around 23 countries.</p>
+            <!-- <a href="about.html#products" class="btn btn-sm btn-primary pull-right">Read more</a> -->
           </div>
         </div>
         <div class="row no-gutters">
           <div class="col-lg-6 text-white showcase-img goLeft" data-aos="flip-up"style="background-image: url('img/bg-showcase-2.jpg');"></div>
           <div class="col-lg-6 my-auto showcase-text">
             <h2 data-aos="fade-down">Point Of Sale</h2>
-            <p class="lead mb-0" data-aos="fade-down">POS system allows you to maintain absolute control over sales and inventory while presenting an easy customer checkout. </p>
-            <button class="btn btn-sm btn-danger pull-right">Read more</button>
+            <p class="small mb-0" data-aos="fade-down">POS system allows you to maintain absolute control over sales and inventory while presenting an easy customer checkout. It is a great solution for both your sales counter and phone order desk. We offer variety of Point of Sale ( POS ) system software and hardware, including receipt printers, touch screen, barcode scanners, barcode printers, pole displays and cash drawers. Retail Point of Sale Systems Includes POS software complete with fully integrated accounting, inventory and payroll systems.Barcode Systems is focused on barcode solutions using barcode printers, scanners and terminals-brands, that are market leaders with reputations for quality, performance, ease of use and reliability as good as our own as a barcode systems integrator</p>
+            <!-- <a href="about.html#products" class="btn btn-sm btn-primary pull-right">Read more</a> -->
           </div>
         </div>
       </div>
@@ -332,12 +337,64 @@
       </div>
     </section>
 
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Contact Us</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="col-lg-12">
+            <form id="contactForm" novalidate="">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input class="form-control" id="name" type="text" placeholder="Your Name " required="" data-validation-required-message="Please enter your name.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="email" type="email" required placeholder="Your Email *" required="" data-validation-required-message="Please enter your email address.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone" required="" data-validation-required-message="Please enter your phone number.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea class="form-control" id="message" required rows="4" placeholder="Your Message *" required="" data-validation-required-message="Please enter a message." aria-invalid="false"></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
     <section class="p-0" id="portfolio">
-      <div class="container">
+      <div class="container" >
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading">Our Works</h2>
-            <hr class="my-4">
+            <hr class="my-4" >
           </div>
         </div>
       </div>
@@ -345,7 +402,7 @@
         <div class="row no-gutters popup-gallery">
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+              <img class="img-fluid" data-aos="zoom-in-left" src="img/portfolio/thumbnails/1.jpg" alt="" >
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -360,7 +417,7 @@
           </div>
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+              <img class="img-fluid" data-aos="zoom-in-left" src="img/portfolio/thumbnails/2.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -375,7 +432,7 @@
           </div>
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+              <img class="img-fluid" data-aos="zoom-in-left" src="img/portfolio/thumbnails/3.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -390,7 +447,7 @@
           </div>
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
+              <img class="img-fluid" data-aos="zoom-in-left" src="img/portfolio/thumbnails/4.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -405,7 +462,7 @@
           </div>
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
+              <img class="img-fluid" data-aos="zoom-in-left" src="img/portfolio/thumbnails/5.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -420,7 +477,7 @@
           </div>
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
+              <img class="img-fluid" data-aos="zoom-in-left" src="img/portfolio/thumbnails/6.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -437,7 +494,100 @@
       </div>
     </section>
 
-    <section id="contact" class="pb-0 bg-light">
+
+<section class="bg-light py-5" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Our Amazing Team</h2>
+            <h3 class="section-subheading small text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <hr class="my-4" >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img data-aos="zoom-in" class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
+              <h4>Kay Garland</h4>
+              <p class="text-muted">Lead Designer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img data-aos="zoom-in" class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
+              <h4>Larry Parker</h4>
+              <p class="text-muted">Lead Marketer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img data-aos="zoom-in" class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
+              <h4>Diana Pertersen</h4>
+              <p class="text-muted">Lead Developer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact" class="pb-0 bg-white">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
@@ -461,13 +611,51 @@
       </div>
       
 
-      <div class="container">
-        
-<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=The+Pearl+Qatar,+Doha,+Qatar&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=The+Pearl+Qatar,+Doha,+Qatar,&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-      <br/>
-      
+      <div class="container-fluid">
+        <div class="row pb-4">
+          <div class="col-md-6 ">
+            <iframe width="100%" class="rounded  border border-warning" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=The+Pearl+Qatar,+Doha,+Qatar&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=The+Pearl+Qatar,+Doha,+Qatar,&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+          </div>
+
+          <div class="col-md-6">
+            <div class="p-4 border border-warning bg-secondary rounded">
+            <form id="contactForm" name="sentMessage" novalidate="">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required="" data-validation-required-message="Please enter your name.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="email" type="email" placeholder="Your Email *" required="" data-validation-required-message="Please enter your email address.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="" data-validation-required-message="Please enter your phone number.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <textarea class="form-control" id="message"  placeholder="Your Message *" required="" data-validation-required-message="Please enter a message." aria-invalid="false"></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          </div>
+
+        </div>
       </div>
     </section>
+
+
 
 
     <footer id="footer" role="contentinfo" class="scroll-section">
@@ -478,10 +666,9 @@
             </a>
            
             <p class="message-text"> <i class="fa fa-heart text-danger mb-3 sr-icons"></i> MADE WITH LOVE IN DOHA  <i class="fa fa-heart text-danger mb-3 sr-icons"></i></p>
-            <div class="">
-              
-
-              <div class="footer_top col-md-6"><h4>Subscribe to our newsletters</h4>
+            <div class="col-md-12">
+            <div class="row mx-1">
+              <div class="footer_top col-md"><h4>Subscribe to our newsletters</h4>
                 <div class="subscribe_form">
                   <div>
                     <form class="es_shortcode_form" data-es_form_id="es_shortcode_form">
@@ -491,29 +678,26 @@
                       </div>
                       <div class="es_button"><input type="button" id="es_txt_button_pg" class="es_textbox_button es_submit_button" name="es_txt_button_pg" value="Subscribe">
                       </div>
-                      <div class="es_msg" id="es_shortcode_msg"><span id="es_msg_pg">
-                      </span>
-                    </div><input type="hidden" id="es_txt_name_pg" name="es_txt_name_pg" value=""><input type="hidden" id="es_txt_group_pg" name="es_txt_group_pg" value="">
                   </form>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-6 footer_bottom">
-                <ul>
+            <div class="col-md footer_bottom">
+                <ul class="">
                   <li class="">
                     <a href="" target="_blank"><i class="fa fa-facebook"></i></a>
                   </li>
-                  <li class="">
+                  <li class="tw">
                     <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
                   </li>
-                  <li class="">
+                  <li class="db">
                     <a href="" target="_blank"><i class="fa fa-dribbble"></i></a>
                   </li>
-                  <li class="">
+                  <li class="li">
                     <a href="" target="_blank"><i class="fa fa-linkedin"></i></a>
                   </li>
-                  <li class="">
+                  <li class="be">
                     <a href="" target="_blank"><i class="fa fa-behance"></i></a>
                   </li>
                 </ul>
@@ -523,8 +707,8 @@
                   <a href="tel:+97466251525">+974 6625 1525</a>
                 </p>
               </div>
-
           </div>
+        </div>
         </div>
       </div>
     </div>
@@ -574,6 +758,14 @@
         });
 
       });
+
+      $('.service-box').click(function (e) {
+        var service = $(e.target).parent().find('h4').html();
+        if (typeof service != 'undefined'){
+          $('#myModal').find('textarea').html('I want to know about '+service);
+        }
+        $('#myModal').modal();
+      })
     </script>
 
   </body>

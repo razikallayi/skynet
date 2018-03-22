@@ -135,6 +135,9 @@ img::-moz-selection {
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
     color: #fff;
   }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link {
+    padding: 0.5rem 1rem;
+  }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
     color: #fff;
@@ -317,6 +320,27 @@ header.masthead p {
   .showcase .showcase-text {
     padding: 7rem;
   }
+}
+
+.team-member {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 225px;
+  height: 225px;
+  border: 7px solid #fff;
+}
+
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+
+.team-member p {
+  margin-top: 0;
 }
 
 #loader-wrapper {
@@ -517,10 +541,75 @@ header.masthead p {
 
 .service-box {
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .service-box:hover {
   transform: scale(0.9);
+}
+
+section#contact .form-group {
+  margin-bottom: 25px;
+}
+
+section#contact .form-group input, section#contact .form-group textarea {
+  padding: 20px;
+}
+
+section#contact .form-group input.form-control {
+  height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+  height: 248px;
+}
+
+section#contact .form-control:focus {
+  border-color: #fed136;
+  box-shadow: none;
+}
+
+section#contact ::-webkit-input-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+  font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+section#contact :-moz-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+  font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+section#contact ::-moz-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+  font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+section#contact :-ms-input-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+  font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+footer {
+  padding: 25px 0;
+  text-align: center;
+}
+
+footer span.copyright {
+  font-size: 90%;
+  line-height: 40px;
+  text-transform: none;
+  font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+section#about::after {
+  content: ' ';
+  width: 100px;
+  height: 200px;
+  background: red;
 }
 
 #footer {
@@ -560,6 +649,8 @@ header.masthead p {
 }
 
 #footer_message a.bg_item {
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
   background: url(../img/qatar-draw.svg) no-repeat #fff;
   background-size: 139px 80px;
   width: 139px;
@@ -572,9 +663,9 @@ header.masthead p {
 }
 
 #footer_message a.bg_item:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
 }
 
 #footer_message p.message {
@@ -673,12 +764,6 @@ header.masthead p {
   background-color: #444;
 }
 
-.footer_bottom {
-  padding: 0 0 40px;
-  float: left;
-  text-align: left;
-}
-
 .footer_bottom p {
   font-size: 16px;
 }
@@ -733,19 +818,6 @@ header.masthead p {
 
 .footer_bottom ul li.li a:hover i, .footer_bottom ul li.li a:focus i {
   color: #0274b3;
-}
-
-.footer_bottom ul li.be a:hover i, .footer_bottom ul li.be a:focus i {
-  color: #1869ff;
-}
-
-.footer_bottom ul li.be a {
-  position: relative;
-  top: 1px;
-}
-
-.footer_bottom ul li.be a i {
-  font-size: 21px;
 }
 
 .footer_bottom ul li.li a {
